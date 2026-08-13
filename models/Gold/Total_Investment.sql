@@ -1,3 +1,6 @@
+{{ config(
+    materialized='table'
+) }}
 WIth TI as 
 (
 SELECT 

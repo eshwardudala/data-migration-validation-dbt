@@ -1,3 +1,6 @@
+{{ config(
+    materialized='table'
+) }}
 select 
     FUND_SYMBOL, 
     {{validate_numeric('INITIAL_INVESTMENT')}} as INITIAL_INVESTMENT,
